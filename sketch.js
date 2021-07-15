@@ -19,7 +19,7 @@ function setup(){
 
   
   ship = createSprite(130,200,30,30);
-  ship.addAnimation("movingShip",shipImage);
+  ship.addAnimation("travellingShip",shipImage);
   ship.scale =0.25;
   
 }
