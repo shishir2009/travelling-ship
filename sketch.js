@@ -1,9 +1,9 @@
 var sea,ship;
-var seaImage,shipImage;
+var seaImg,shipImg;
 
 function preload(){
-  seaImage = loadImage("sea.png");
-  shipImage = loadAnimation("ship-1.png","ship-1.png","ship-3.png","ship-4.png");
+  seaImg = loadImage("sea.png");
+  shipImg = loadAnimation("ship-1.png","ship-1.png","ship-3.png","ship-4.png");
 }
 
 function setup(){
@@ -12,13 +12,13 @@ function setup(){
 
   // Moving background
   sea=createSprite(400,200);
-  sea.addImage(seaImage);
+  sea.addImage(seaImg);
   sea.velocityX = -5;
   sea.scale=0.3;
 
   
   ship = createSprite(130,200,30,30);
-  ship.addAnimation("travellingShip",shipImage);
+  ship.addAnimation("movingShip",shipImg);
   ship.scale =0.25;
   
 }
@@ -35,4 +35,3 @@ function draw() {
     
   drawSprites();
 }
-
